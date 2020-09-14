@@ -1,0 +1,9 @@
+#!/bin/bash
+scriptShell =`ls > scriptShell.txt`
+
+while read LINE
+do
+echo $LINE | grep png | cut -f 1 -d '.' >> ./texto.txt
+done < scriptShell.txt
+
+rm scriptShell.txt
