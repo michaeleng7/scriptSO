@@ -1,0 +1,11 @@
+#! / bin / bash
+
+scriptImagem = ` ls texto.txt `
+var = 1
+
+enquanto  lê a linha ;  Faz
+scriptImagem [var] = " $ line .png "
+var = $ (( var +  1 ))
+feito  <  $ scriptImagem
+
+echo  $ {scriptImagem [*]}  >> texto2.txt
